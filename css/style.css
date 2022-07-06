@@ -1,0 +1,191 @@
+* 
+{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+p
+{
+	color: black;
+}
+
+span
+{
+	font-weight: bold;
+}
+
+.section_2, .section_3
+{
+	padding: 15px;
+}
+
+header
+{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+header img
+{
+	width: 50%;
+}
+
+.localisation
+{
+	background-color: #EAEAEA;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	color: #353535;
+	font-size: 14px;
+}
+
+.localisation i 
+{
+	padding-right: 15px;
+}
+
+.intro
+{
+	background-color: #F2F2F2;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.intro a 
+{
+	color: white;
+}
+
+.intro a :hover 
+{
+	filter: brightness(1.1);
+	box-shadow: 3px 3px 10px grey;
+	transition-duration: 300ms;
+}
+
+.btn_explore
+{
+	background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+	border-radius: 25px;
+	padding: 10px;
+	margin: 20px;
+	box-shadow: 0px 0px 10px grey;
+}
+
+.section_2 li 
+{
+	background-color: #F2F2F2;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 15px;
+	list-style: none;
+}
+
+.section_2 ul :hover
+{
+	background-color: #F5EDFF;
+}
+
+.section_3
+{
+	background-color: #F2F2F2;
+}
+
+.section_3 h1
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.nouveau
+{
+	position: absolute;
+	right: 25px;
+	margin-top: 10px;
+	color: #008766;
+	background-color: #99E2D0;
+	padding: 5px;
+}
+
+.conteneur_restaurant img
+{
+	object-fit: cover;
+	width: 100%;
+	height: 150px;
+	border-radius: 15px 15px 0 0;
+}
+
+.conteneur_restaurant
+{
+	background-color: white;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.conteneur_restaurant:hover
+{
+	transform: scale(1.01);
+	transition-duration: 300ms;
+}
+
+.info_restaurant
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	padding: 10px;
+}
+
+.txt_restaurant p
+{
+	padding: 0;
+}
+
+
+footer
+{
+	background-color: #353535;
+	padding: 15px;
+}
+
+.footer_title
+{
+	color: white;
+	font-family: 'Shrikhand', cursive;
+	margin-bottom: 10px;
+
+}
+
+footer a
+{
+	color: white;
+}
+
+footer li 
+{
+	margin-bottom: 5px;
+}
+
+footer li :hover
+{
+	text-decoration: underline white;
+}
+
+footer ul
+{
+	list-style-type: none;
+}
+
+footer i 
+{
+	font-size: 13px;
+	margin-right: 5px;
+}

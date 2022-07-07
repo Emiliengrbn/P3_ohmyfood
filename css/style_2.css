@@ -33,12 +33,6 @@ header
 	display: flex;
 	margin: 10px;
 	align-items: center;
-	width: 100%;
-}
-
-header img
-{
-	justify-content: center;
 }
 
 header i
@@ -49,7 +43,7 @@ header i
 
 .logo
 {
-	width: 50%;
+	width: 165px;
 }
 
 .image_fond img
@@ -86,6 +80,17 @@ header i
     position: relative;
 }
 
+.heart i
+{
+	font-size: 25px;
+}
+
+.heart i:hover
+{
+	background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    cursor: pointer;
+}
+
 .details_menu
 {
 	margin: 10px;
@@ -118,14 +123,6 @@ header i
     text-overflow: ellipsis;
 	flex-wrap: nowrap;
 }
-
-
-
-
-
-
-
-
 
 main a
 {
@@ -189,4 +186,44 @@ footer i
 {
 	font-size: 13px;
 	margin-right: 5px;
+	width: 12px;
+}
+
+@media all and (min-width: 768px)
+{
+	.nom_restaurant
+	{
+		justify-content: normal;
+	}
+
+	.heart
+	{
+		padding-left: 30px;
+	}
+
+	.all_menu
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.liste_menu
+	{
+		width: 50%;
+	}
+
+	footer ul
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
+@media all and (min-width: 1024px)
+{
+	.all_menu
+	{
+		flex-wrap: nowrap;
+	}
 }

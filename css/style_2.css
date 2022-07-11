@@ -131,6 +131,47 @@ header h1
     overflow: hidden;
     text-overflow: ellipsis;
 	flex-wrap: nowrap;
+	width: 80%;
+}
+
+.nom_assiettes:hover
+{
+	width: 60%;
+}
+
+.nom_assiettes span 
+{
+	width: 20%;
+}
+
+.check_animation i 
+{
+	color: #99e2d0;
+	background-color: white;
+	height: 27px;
+	width: 27px;
+	border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check_animation
+{
+	background-color: #99e2d0;
+    width: 0px;
+    height: 56px;
+    margin: -10px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	overflow: hidden;
+}
+
+.details_menu:hover .check_animation
+{
+	width: 60px;
 }
 
 main a

@@ -31,14 +31,11 @@ span
 header
 {
 	display: flex;
-	margin: 10px;
+	padding: 10px;
 	align-items: center;
-	width: 100%;
-}
-
-header img
-{
-	justify-content: center;
+	z-index: 1000;
+	position: relative;
+	box-shadow: 0px 0px 5px grey;
 }
 
 header i
@@ -47,9 +44,15 @@ header i
 	color: black;
 }
 
+header h1
+{
+	text-align: center;
+}
+
 .logo
 {
-	width: 50%;
+	width: 165px;
+	margin: auto;
 }
 
 .image_fond img
@@ -86,6 +89,39 @@ header i
     position: relative;
 }
 
+.heart_animation i
+{
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.heart_animation
+{
+	display: flex;
+}
+
+.far
+{
+  z-index:1;
+  margin-right: -25px;
+}
+
+.fas
+{
+  z-index: 2;
+  color: transparent;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition-duration: 200ms;
+}
+
+.heart_animation:hover .fas
+{
+  opacity: 1;
+}
+
 .details_menu
 {
 	margin: 10px;
@@ -117,20 +153,119 @@ header i
     overflow: hidden;
     text-overflow: ellipsis;
 	flex-wrap: nowrap;
+	width: 80%;
 }
 
+.details_menu:hover .nom_assiettes
+{
+	width: 60%;
+}
 
+.nom_assiettes span 
+{
+	width: 20%;
+}
 
+.check_animation i 
+{
+	color: #99e2d0;
+	background-color: white;
+	height: 27px;
+	width: 27px;
+	border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.check_animation
+{
+	background-color: #99e2d0;
+    width: 0px;
+    height: 56px;
+    margin: -10px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	overflow: hidden;
+}
 
+.details_menu:hover .check_animation
+{
+	width: 60px;
+	transition-duration: 400ms;
+}
 
+.details_menu
+{
+    -webkit-animation: opacity 1s both;
+    animation: opacity 1s both;
+}
 
+@keyframes opacity
+{
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
 
+#case-1 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+#case-2 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#case-3 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+#case-4 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#case-5 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+#case-6 {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+#case-7 {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+#case-8 {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+#case-9 {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+#case-10 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
 
 main a
 {
 	color: white;
-	text-align: center;
 }
 
 main a :hover 
@@ -147,7 +282,6 @@ main a :hover
 	padding: 15px 35px;
 	margin: 20px auto;
 	box-shadow: 0px 0px 10px grey;
-	width: 50%;
 	width: min-content;
 }
 
@@ -189,4 +323,42 @@ footer i
 {
 	font-size: 13px;
 	margin-right: 5px;
+	width: 12px;
+}
+
+@media all and (min-width: 768px)
+{
+	.nom_restaurant
+	{
+		justify-content: normal;
+	}
+
+	.nom_restaurant h1 
+	{
+		margin-right: 15px;
+	}
+
+	.heart
+	{
+		padding-left: 30px;
+	}
+
+	.all_menu
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.liste_menu
+	{
+		width: 50%;
+	}
+}
+
+@media all and (min-width: 1024px)
+{
+	.all_menu
+	{
+		flex-wrap: nowrap;
+	}
 }

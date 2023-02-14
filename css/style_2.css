@@ -1,35 +1,30 @@
-*
-{ 
+* {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
 }
 
-h2
-{
+h2 {
 	font-weight: normal;
 	font-size: 15px;
 	border-bottom: 3px solid #99E2D0;
 	width: 36px;
-    margin-top: 25px;
-    margin-left: 10px;
+	margin-top: 25px;
+	margin-left: 10px;
 }
 
-p
-{
+p {
 	color: black;
 	font-size: 14px;
 }
 
-span
-{
+span {
 	font-weight: bold;
 	font-size: 15px;
 }
 
-header
-{
+header {
 	display: flex;
 	padding: 10px;
 	align-items: center;
@@ -38,92 +33,79 @@ header
 	box-shadow: 0px 0px 5px grey;
 }
 
-header i
-{
+header i {
 	font-size: 25px;
 	color: black;
 }
 
-header h1
-{
+header h1 {
 	text-align: center;
 }
 
-.logo
-{
+.logo {
 	width: 165px;
 	margin: auto;
 }
 
-.image_fond img
-{
+.image_fond img {
 	width: 100%;
-    height: 235px;
+	height: 235px;
 	object-fit: cover;
-    z-index: 1;
-    margin-bottom: -35px;
+	z-index: 1;
+	margin-bottom: -35px;
 }
 
-.nom_restaurant
-{
+.nom_restaurant {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.nom_restaurant h1
-{
+.nom_restaurant h1 {
 	font-family: 'Shrikhand', cursive;
 	font-weight: normal;
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
 
-.menu
-{
+.menu {
 	padding: 10px;
 	background-color: #F2F2F2;
 	border-radius: 30px 30px 0 0;
-    z-index: 2;
-    position: relative;
+	z-index: 2;
+	position: relative;
 }
 
-.heart_animation i
-{
+.heart_animation i {
 	font-size: 25px;
 	cursor: pointer;
 }
 
-.heart_animation
-{
+.heart_animation {
 	display: flex;
 }
 
-.far
-{
-  z-index:1;
-  margin-right: -25px;
+.far {
+	z-index: 1;
+	margin-right: -25px;
 }
 
-.fas
-{
-  z-index: 2;
-  color: transparent;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition-duration: 200ms;
+.fas {
+	z-index: 2;
+	color: transparent;
+	background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+	background-clip: text;
+	-webkit-background-clip: text;
+	opacity: 0;
+	transition-duration: 200ms;
 }
 
-.heart_animation:hover .fas
-{
-  opacity: 1;
+.heart_animation:hover .fas {
+	opacity: 1;
 }
 
-.details_menu
-{
+.details_menu {
 	margin: 10px;
 	padding: 10px;
 	background: white;
@@ -134,149 +116,138 @@ header h1
 	align-items: flex-end;
 }
 
-.nom_assiettes p, .txt_overflow
-{	
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.nom_assiettes p,
+.txt_overflow {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.details_menu:hover
-{
+.details_menu:hover {
 	transform: scale(1.01);
 	transition-duration: 300ms;
 	cursor: pointer;
 }
 
-.nom_assiettes
-{
-    overflow: hidden;
-    text-overflow: ellipsis;
+.nom_assiettes {
+	overflow: hidden;
+	text-overflow: ellipsis;
 	flex-wrap: nowrap;
 	width: 80%;
 }
 
-.details_menu:hover .nom_assiettes
-{
+.details_menu:hover .nom_assiettes {
 	width: 60%;
 }
 
-.nom_assiettes span 
-{
+.nom_assiettes span {
 	width: 20%;
 }
 
-.check_animation i 
-{
+.check_animation i {
 	color: #99e2d0;
 	background-color: white;
 	height: 27px;
 	width: 27px;
 	border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.check_animation
-{
+.check_animation {
 	background-color: #99e2d0;
-    width: 0px;
-    height: 56px;
-    margin: -10px;
-    border-radius: 0 10px 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 0px;
+	height: 56px;
+	margin: -10px;
+	border-radius: 0 10px 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	overflow: hidden;
 }
 
-.details_menu:hover .check_animation
-{
+.details_menu:hover .check_animation {
 	width: 60px;
 	transition-duration: 400ms;
 }
 
-.details_menu
-{
-    -webkit-animation: opacity 1s both;
-    animation: opacity 1s both;
+.details_menu {
+	-webkit-animation: opacity 1s both;
+	animation: opacity 1s both;
 }
 
-@keyframes opacity
-{
-0% {
-    opacity: 0;
-}
-100% {
-    opacity: 1;
-}
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 #case-1 {
-    -webkit-animation-delay: 0.1s;
-    animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
 }
 
 #case-2 {
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 
 #case-3 {
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
 }
 
 #case-4 {
-    -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
 
 #case-5 {
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
 
 #case-6 {
-    -webkit-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
 }
 
 #case-7 {
-    -webkit-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
 }
 
 #case-8 {
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
 }
 
 #case-9 {
-    -webkit-animation-delay: 0.9s;
-    animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+	animation-delay: 0.9s;
 }
 
 #case-10 {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
 }
 
-main a
-{
+main a {
 	color: white;
 }
 
-main a :hover 
-{
+main a :hover {
 	filter: brightness(1.1);
 	box-shadow: 3px 3px 10px grey;
 	transition-duration: 300ms;
 }
 
-.btn_commander
-{
+.btn_commander {
 	background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 	border-radius: 25px;
 	padding: 15px 35px;
@@ -285,80 +256,65 @@ main a :hover
 	width: min-content;
 }
 
-footer
-{
+footer {
 	background-color: #353535;
 	padding: 15px;
 }
 
-.footer_title
-{
+.footer_title {
 	color: white;
 	font-family: 'Shrikhand', cursive;
 	margin-bottom: 10px;
 
 }
 
-footer a
-{
+footer a {
 	color: white;
 }
 
-footer li 
-{
+footer li {
 	margin-bottom: 5px;
 }
 
-footer li :hover
-{
+footer li :hover {
 	text-decoration: underline white;
 }
 
-footer ul
-{
+footer ul {
 	list-style-type: none;
 }
 
-footer i 
-{
+footer i {
 	font-size: 13px;
 	margin-right: 5px;
 	width: 12px;
 }
 
-@media all and (min-width: 768px)
-{
-	.nom_restaurant
-	{
+@media all and (min-width: 768px) {
+	.nom_restaurant {
 		justify-content: normal;
 	}
 
-	.nom_restaurant h1 
-	{
+	.nom_restaurant h1 {
 		margin-right: 15px;
 	}
 
-	.heart
-	{
+	.heart {
 		padding-left: 30px;
 	}
 
-	.all_menu
-	{
+	.all_menu {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	.liste_menu
-	{
+	.liste_menu {
 		width: 50%;
 	}
 }
 
-@media all and (min-width: 1024px)
-{
-	.all_menu
-	{
+@media all and (min-width: 1024px) {
+	.all_menu {
 		flex-wrap: nowrap;
 	}
 }
